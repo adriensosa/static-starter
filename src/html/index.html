@@ -1,8 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <title>Static starter</title>
     <meta charset="utf-8"/>
-    <title>My First Parcel App</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
       @font-face {
@@ -22,25 +24,11 @@
     <link href="../css/index.css" rel="stylesheet">
   </head>
   <body>
-    <h1>Hello, World!</h1>
-    <button data-effect="fadeInUp" data-run-once class="button button-primary animonItem">Button</button>
+    <include src="./src/html/sections/header.html"></include>
+    <main>
+      <h1 data-effect="fadeInUp" class="animonItem" data-run-once>Hello, World!</h1>
+    </main>
     <include src="./src/html/sections/footer.html"></include>
-
     <script type="module" src="../js/index.ts"></script>
-    <script type="text/javascript" src="../js/animon.js"></script>
   </body>
 </html>
-
-<!--
-  <include src="src/html/components/influencer-card.html" locals='{
-            "influencer": "Léo Duff",
-            "img": "../assets/img/leo.png",
-            "role": "#High-Tech",
-            "offset": "16",
-            "delay": "500",
-            "link": "https://www.youtube.com/c/leoduff",
-            "label": "voir le profil"
-        }'></include>
- 
-        {{ offset === 'true' ? 'flex flex-col lg:justify-end' : '' }}
--->
