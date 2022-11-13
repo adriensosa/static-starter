@@ -1,4 +1,4 @@
-@import "./animon.css";
+@import "./libs/animon.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
